@@ -1,0 +1,32 @@
+{
+  "name": "ds-test",
+  "version": "1.0.0",
+  "description": "atomic design scaffold",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook"
+  },
+  "keywords": [
+    "design-system",
+    "atomic-design"
+  ],
+  "author": "Paul Sembereka",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.4",
+    "@storybook/html": "^5.3.10",
+    "@whitespace/storybook-addon-html": "^1.2.1",
+    "babel-loader": "^8.0.6"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^5.3.10",
+    "@storybook/addon-storysource": "^5.3.10",
+    "pug": "^2.0.4",
+    "pug-runtime": "^2.0.5",
+    "storypug": "^1.0.0-rc.8"
+  }
+}
