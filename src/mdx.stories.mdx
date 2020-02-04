@@ -8,8 +8,36 @@ import { withText } from './index.stories';
 
 Let's define a story for our `Badge` component:
 
-<Preview>
-  <button class="btn">Hello World</button>
-</Preview>
+
+```js live=true
+    const button = document.querySelector('#some')
+
+    button.addEventListener("click", click)
+
+    function click(){
+        alert('You clicked me')
+    }
+```
+
+
+<button class="btn" onClick={() => console.log('clicked')}>Hello World</button>
+
+
+```html
+<button id="some" class="btn" onclick="click()">Click</button>
+```
+
+
+> An awesome project.
+
+### Blue button Example
+
+
+<button id="some" class="btn" onclick="click()">Click</button>
+
+
+```html
+<button id="some" class="btn" onclick="click()">Click</button>
+```
 
 

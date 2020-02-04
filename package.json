@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "docsify": "docsify serve docs"
   },
   "keywords": [
     "design-system",
