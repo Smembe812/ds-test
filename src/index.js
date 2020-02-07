@@ -14,35 +14,24 @@ async function mark(dir){
 
         const {attributes: {template, code}, body} = content
         let cssCode, css;
+
+        const something = "I've been parsed"
+        
         
         try {
             cssCode = await readFile(code.css)
-            css = `~~~css
-${cssCode}
-`     
+            css = `${cssCode}`     
         } catch (error) {
             cssCode = null
             css = ''
         }
+        let evalBody = eval('`'+body+'`')
 
-        const md = `
-${body}
+        const md = `\n${evalBody}`
 
-~~~html
-${template}
-~~~
-
-~~~js
-${code.js}
-~~~
-
-${css}
-`
-
-        console.log(md, content)
         writeMD('../docs/gen.md', md)      
     } catch (error) {
-        console.log(error)
+        throw error
     }
 }
 
