@@ -4,21 +4,9 @@ const rename = require('gulp-rename');
 const minifyCSS = require('gulp-csso');
 const concat = require('gulp-concat');
 const sass = require('gulp-sass')
-
-const {log} = require('gulp-util');
-
-
-const fs = require('fs')
-  , fm = require('front-matter')
-
-const util = require('util');
-const reader = util.promisify(fs.readFile);
-const writer = util.promisify(fs.writeFile)
-const appender = util.promisify(fs.appendFile)
-
 const es = require('event-stream');
 
-const {markdown} = require('./src/utility')
+const markdown = require("./src/utility/markdown")
 
 task("default", testDefault)
 
@@ -37,11 +25,12 @@ function testDefault() {
 }
 
 /**
- * Build component css, library css, minified library css
+ * Build component css, bundled css, minified bundles css
  */
 function css() {
     return src('./src/components/*/*.scss')
         .pipe(sass())
+        
         //build component css
         .pipe(dest('./dist/css/components/'))
 
@@ -55,6 +44,9 @@ function css() {
         .pipe(dest('./dist/css/'))
 }
 
+/**
+ * compile component.html from component.hbs
+ */
 function html(){
     const templateData = {
         firstName: 'Kaanon'
@@ -76,6 +68,9 @@ function html(){
         .pipe(dest('./'))
 }
 
+/**
+ * build MD docs for Dosify.js from component.doc.md
+ */
 function doc(){
     return src('./src/components/**/*doc.md')
         .pipe(makeDocForCurrentFile(es))
@@ -84,6 +79,6 @@ function doc(){
 function makeDocForCurrentFile(es){
     return es.map(async (file, cb) => {
         const docFile = await markdown(file.path)
-        return cb(null, file)
+        return cb(null, docFile)
     })
 }
