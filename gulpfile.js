@@ -98,7 +98,6 @@ async function mark(dir){
         let cssCode, css;
         
         const something = "I've been parsed"
-        console.log(name)
         template = await readFile(template)
         
         try {
@@ -111,11 +110,18 @@ async function mark(dir){
         let evalBody = eval('`'+body+'`')
         
         const md = `\n${evalBody}`
+        const newLine = `* [${name}](${name}.md)`
 
         try {
             const mdFile = await writeMD(`./docs/${name}.md`, md)  
-            
-            await appender('./docs/_sidebar.md', `\n* [${name}](${name}.md)`)
+            const lines = await reader('./docs/_sidebar.md', 'utf8')
+
+            //find if line already exists
+            const linesArray = lines.split('\n')
+            const findLine = linesArray.filter((aLine) => newLine === aLine)
+
+            //append new line if new component
+            const append = findLine < 1 ? await appender('./docs/_sidebar.md', `\n${newLine}`) : ''
         } catch (error) {
             throw error
         }
