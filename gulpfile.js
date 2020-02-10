@@ -18,6 +18,8 @@ const appender = util.promisify(fs.appendFile)
 
 const es = require('event-stream');
 
+const {markdown} = require('./src/utility')
+
 task("default", testDefault)
 
 task("compile:css", css)
@@ -77,73 +79,11 @@ function html(){
 function doc(){
     return src('./src/components/**/*doc.md')
         .pipe(makeDocForCurrentFile(es))
-        .pipe(dest('./docs'))
 }
 
 function makeDocForCurrentFile(es){
-    return es.map((file, cb) => {
-        mark(file.path)
+    return es.map(async (file, cb) => {
+        const docFile = await markdown(file.path)
         return cb(null, file)
     })
-}
-
-async function mark(dir){
-    try {
-        const readData = await readFile(dir)
-
-        const content = fm(readData)
-
-        
-        let {attributes: {template, code, name}, body} = content
-        let cssCode, css;
-        
-        const something = "I've been parsed"
-        template = await readFile(template)
-        
-        try {
-            cssCode = await readFile(code.css)
-            code.css = `${cssCode}`     
-        } catch (error) {
-            cssCode = null
-            code.css = ''
-        }
-        let evalBody = eval('`'+body+'`')
-        
-        const md = `\n${evalBody}`
-        const newLine = `* [${name}](${name}.md)`
-
-        try {
-            const mdFile = await writeMD(`./docs/${name}.md`, md)  
-            const lines = await reader('./docs/_sidebar.md', 'utf8')
-
-            //find if line already exists
-            const linesArray = lines.split('\n')
-            const findLine = linesArray.filter((aLine) => newLine === aLine)
-
-            //append new line if new component
-            const append = findLine < 1 ? await appender('./docs/_sidebar.md', `\n${newLine}`) : ''
-        } catch (error) {
-            throw error
-        }
-    } catch (error) {
-        throw error
-    }
-}
-
-async function writeMD(dir, content){
-    try {
-        return await writer(dir, content)
-    } catch (error) {
-        return Promise.reject(error)
-    }
-}
-
-
-async function readFile(dir){
-    try {
-        const content = await reader(dir, 'utf8')
-        return content
-    } catch (error) {
-        return error
-    }
 }
