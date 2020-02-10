@@ -1,7 +1,7 @@
 ---
 title: Just hack'n
 description: Nothing to see here
-template: '<h2>This is a template</h2>'
+template: './test.html'
 code: 
     js: "console.log('something')"
     css: ./test.css
