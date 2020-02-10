@@ -12,7 +12,7 @@ async function mark(dir){
 
         const content = fm(readData)
 
-        const {attributes: {template, code}, body} = content
+        let {attributes: {template, code}, body} = content
         let cssCode, css;
 
         const something = "I've been parsed"
@@ -20,10 +20,10 @@ async function mark(dir){
         
         try {
             cssCode = await readFile(code.css)
-            css = `${cssCode}`     
+            code.css = `${cssCode}`     
         } catch (error) {
             cssCode = null
-            css = ''
+            code.css = ''
         }
         let evalBody = eval('`'+body+'`')
 

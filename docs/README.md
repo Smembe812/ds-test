@@ -52,3 +52,16 @@ function click(){
 ```
 
 <!-- tabs:end -->
+
+
+~~~
+<div></div>
+~~~
+
+~~~~ruby startline=3 $%@#$
+def foo(x)
+  return 3
+end
+~~~~~~~
+
+<p>{{firstname}} {{lastname}}</p>
