@@ -1,5 +1,5 @@
 
-This is some text about some stuff that happened sometime ago
+This demonstrates how to make a button
 
 <button class="btn">This Button</button>
 
