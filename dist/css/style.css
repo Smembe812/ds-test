@@ -2,4 +2,5 @@
   background: blue; }
 
 .link {
-  background: yellow; }
+  text-decoration: none;
+  color: yellow; }

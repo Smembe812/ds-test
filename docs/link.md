@@ -5,7 +5,8 @@ This demonstrates how to make a link
 
 <style>
     .link {
-  background: yellow; }
+  text-decoration: none;
+  color: yellow; }
 
 </style>
 
@@ -19,6 +20,7 @@ console.log('something')
 
 ~~~css
 .link {
-  background: yellow; }
+  text-decoration: none;
+  color: yellow; }
 
 ~~~
