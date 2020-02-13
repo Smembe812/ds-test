@@ -36,6 +36,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-util": "^3.0.8",
     "handlebars": "^4.7.3",
+    "mocha": "^7.0.1",
     "pug": "^2.0.4",
     "pug-runtime": "^2.0.5",
     "storypug": "^1.0.0-rc.8"

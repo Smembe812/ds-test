@@ -1,0 +1,132 @@
+/**grid Container*/
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr [col-start]);
+    grid-auto-rows: auto;
+
+    /**
+        __col-start, col-end, row-end, row-start can be attached to item element
+    */
+    &__col-start-1{
+        grid-column-start: 1;
+    }
+
+    &__col-start-2{
+        grid-column-start: 2;
+    }
+
+    &__col-start-3{
+        grid-column-start: 3;
+    }
+
+    &__col-start-4{
+        grid-column-start: 4;
+    }
+
+    &__col-start-5{
+        grid-column-start: 5;
+    }
+
+    &__col-start-6{
+        grid-column-start: 6;
+    }
+
+    &__col-start-7{
+        grid-column-start: 7;
+    }
+
+    &__col-start-8{
+        grid-column-start: 8;
+    }
+
+    &__col-start-9{
+        grid-column-start: 9;
+    }
+
+    &__col-start-10{
+        grid-column-start: 10;
+    }
+
+    &__col-start-11{
+        grid-column-start: 11;
+    }
+
+    &__col-start-12{
+        grid-column-start: 12;
+    }
+
+    /** where column should end*/
+    &__col-end-1{
+        grid-column-end: 1
+    }
+
+    &__col-end-2{
+        grid-column-end: 2
+    }
+
+    &__col-end-3{
+        grid-column-end: 3
+    }
+
+    &__col-end-4{
+        grid-column-end: 4
+    }
+
+    &__col-end-5{
+        grid-column-end: 5
+    }
+
+    &__col-end-6{
+        grid-column-end: 6
+    }
+
+    &__col-end-7{
+        grid-column-end: 7
+    }
+
+    &__col-end-8{
+        grid-column-end: 8
+    }
+
+    &__col-end-9{
+        grid-column-end: 9
+    }
+
+    &__col-end-10{
+        grid-column-end: 10
+    }
+
+    &__col-end-11{
+        grid-column-end: 11
+    }
+
+    &__col-end-12{
+        grid-column-end: 12
+    }
+
+    &__col-end-13{
+        grid-column-end: 13
+    }
+
+    /** where column should start*/
+    &__row-start-1{
+        grid-row-start: 1;
+    }
+
+    &__row-start-2{
+        grid-row-start: 2;
+    }
+
+    &__row-end-2{
+        grid-row-end: 2;
+    }
+
+    &__row-end-3{
+        grid-row-end: 3;
+    }
+
+    &__col-2{
+        grid-column-end: span 2;
+    }
+
+}

@@ -1,6 +1,3 @@
-.btn {
-  background: blue; }
-
 /**grid Container*/
 .grid {
   display: grid;
@@ -71,7 +68,3 @@
     grid-row-end: 3; }
   .grid__col-2 {
     grid-column-end: span 2; }
-
-.link {
-  text-decoration: none;
-  color: yellow; }
