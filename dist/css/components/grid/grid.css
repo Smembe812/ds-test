@@ -8,6 +8,16 @@
     */
   /** where column should end*/
   /** where column should start*/ }
+  .grid__box {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-template-columns: repeat(12, 1fr); }
+  .grid__box--uniform {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-start: 1;
+    grid-column-end: 13; }
   .grid__col-start-1 {
     grid-column-start: 1; }
   .grid__col-start-2 {
@@ -66,5 +76,29 @@
     grid-row-end: 2; }
   .grid__row-end-3 {
     grid-row-end: 3; }
+  .grid__col-1 {
+    grid-column-end: span 1; }
   .grid__col-2 {
     grid-column-end: span 2; }
+  .grid__col-3 {
+    grid-column-end: span 3; }
+  .grid__col-4 {
+    grid-column-end: span 4; }
+  .grid__col-5 {
+    grid-column-end: span 5; }
+  .grid__col-6 {
+    grid-column-end: span 6; }
+  .grid__col-7 {
+    grid-column-end: span 7; }
+  .grid__col-8 {
+    grid-column-end: span 8; }
+  .grid__col-9 {
+    grid-column-end: span 9; }
+  .grid__col-10 {
+    grid-column-end: span 10; }
+  .grid__col-11 {
+    grid-column-end: span 11; }
+  .grid__col-12 {
+    grid-column-end: span 12; }
+  .grid__col {
+    grid-column: span auto; }

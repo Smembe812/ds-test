@@ -4,6 +4,20 @@
     grid-template-columns: repeat(12, 1fr [col-start]);
     grid-auto-rows: auto;
 
+    &__box {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    &__box--uniform{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        grid-column-start: 1;
+        grid-column-end: 13;
+    }
+
     /**
         __col-start, col-end, row-end, row-start can be attached to item element
     */
@@ -125,8 +139,68 @@
         grid-row-end: 3;
     }
 
+    &__col-1{
+        grid-column-end: span 1;
+    }
+
     &__col-2{
         grid-column-end: span 2;
     }
+
+    &__col-3{
+        grid-column-end: span 3;
+    }
+
+    &__col-4{
+        grid-column-end: span 4;
+    }
+
+    &__col-5{
+        grid-column-end: span 5;
+    }
+
+    &__col-6{
+        grid-column-end: span 6;
+    }
+
+    &__col-7{
+        grid-column-end: span 7;
+    }
+
+    &__col-8{
+        grid-column-end: span 8;
+    }
+
+    &__col-9{
+        grid-column-end: span 9;
+    }
+
+    &__col-10{
+        grid-column-end: span 10;
+    }
+
+    &__col-11{
+        grid-column-end: span 11;
+    }
+
+    &__col-12{
+        grid-column-end: span 12;
+    }
+
+    &__col{
+        grid-column: span auto;
+    }
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {  }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {  }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {  }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {  }
 
 }
