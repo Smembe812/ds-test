@@ -10,6 +10,9 @@
     &__item:active, &__item:hover{
         border-left: solid black;
     }
+    &__item--active{
+        border-left: solid black;
+    }
     &__a {
         text-decoration: none;
     }

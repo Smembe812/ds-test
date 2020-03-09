@@ -6,6 +6,8 @@
     padding: 0.25em 1em; }
   .toc__item:active, .toc__item:hover {
     border-left: solid black; }
+  .toc__item--active {
+    border-left: solid black; }
   .toc__a {
     text-decoration: none; }
   .toc__sub-toc {
