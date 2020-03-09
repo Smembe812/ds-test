@@ -1,0 +1,39 @@
+.toc {
+    list-style: none;
+    color: #a3a1a1;
+    padding: 0.25em 1em;;
+    
+    &__item{
+        padding: 0.25em 1em;
+    }
+
+    &__item:active, &__item:hover{
+        border-left: solid black;
+    }
+    &__a {
+        text-decoration: none;
+    }
+    
+    &__sub-toc{
+        list-style: none;
+        color: #a3a1a1;
+    }
+    
+    &__a:focus{
+        color: black;
+    }
+    
+    &__a:link, &__a:visited{
+        color: #a3a1a1;
+    }
+    &__a:hover{
+        color: black;
+    }
+    &__a:active{
+        color: black;
+    }
+    
+    &__a--active{
+        color: black !important;
+    }
+}
