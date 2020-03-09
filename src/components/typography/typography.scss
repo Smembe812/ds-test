@@ -1,0 +1,39 @@
+.typography{
+
+    &__heading-one{
+        margin-bottom: 1.5rem;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+    &__heading-two{
+        margin-bottom: 1.5rem;
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+    &__heading-three{
+        margin-bottom: 1.5rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    &__heading-four{
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    &__heading-five{
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    &__heading-six{
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    &__paragraph{
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+}
+    
