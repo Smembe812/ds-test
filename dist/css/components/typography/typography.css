@@ -1,34 +1,34 @@
 .typography__heading-one {
   margin-bottom: 1.5rem;
-  font-size: 4.5rem;
-  line-height: 4.5rem; }
+  font-size: 4.5em;
+  line-height: 5rem; }
 
 .typography__heading-two {
   margin-bottom: 1.5rem;
-  font-size: 4rem;
-  line-height: 4rem; }
+  font-size: 4em;
+  line-height: 4.5rem; }
 
 .typography__heading-three {
   margin-bottom: 1.5rem;
-  font-size: 3.5rem;
-  line-height: 3.5rem; }
+  font-size: 3.5em;
+  line-height: 4rem; }
 
 .typography__heading-four {
   margin-bottom: 1.5rem;
-  font-size: 3rem;
-  line-height: 3rem; }
+  font-size: 3em;
+  line-height: 3.5rem; }
 
 .typography__heading-five {
   margin-bottom: 1.5rem;
-  font-size: 2.5rem;
-  line-height: 2.5rem; }
+  font-size: 2.5em;
+  line-height: 3rem; }
 
 .typography__heading-six {
   margin-bottom: 1.5rem;
-  font-size: 2rem;
-  line-height: 2rem; }
+  font-size: 2em;
+  line-height: 2.5rem; }
 
 .typography__paragraph {
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  line-height: 1.5rem; }
+  font-size: 1.1em;
+  line-height: 2rem; }
