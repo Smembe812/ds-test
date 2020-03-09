@@ -1,3 +1,15 @@
-.btn {
-    background: blue
+.dl-btn {
+    padding: 0.5em 1em;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: medium;
+    
+    &__dark{
+        color: white;
+        background: #343a40;
+    }
+
+    &__secondary{
+        background: transparent;
+    }
 }
