@@ -2,10 +2,16 @@
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2), 0px 0px 0px 0px rgba(0,0,0,0.14), 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
     padding: 2rem;
 
+    
+    &__image{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    
     &__header{
         font-weight: 300;
     }
-
+    
     &__header-text{
         border-bottom: solid thin;
         padding: 0.25em 0;
@@ -15,15 +21,33 @@
         font-size: 2em;
         line-height: 2.5rem;
     }
-
+    
     &__text{
         margin-bottom: 1.5rem;
         font-size: 1em;
         line-height: 2rem;    
     }
-
+    
     &__footer{
         font-weight: 300;
+    }
+    
+    &__list{
+        .card__header {
+            font-weight: 300 !important;
+        }
+
+        .card__title {
+            line-height: 1rem;
+            font-weight: 400;
+            margin: 1.25rem 0;
+            font-size: 1.75em;
+        }
+
+        .card__text {
+            line-height: 1.25rem;
+            font-weight: 300;
+        }
     }
 }    
 

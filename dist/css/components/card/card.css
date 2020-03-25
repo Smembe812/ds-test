@@ -1,6 +1,9 @@
 .card {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
   padding: 2rem; }
+  .card__image {
+    width: 100%;
+    margin-bottom: 2rem; }
   .card__header {
     font-weight: 300; }
   .card__header-text {
@@ -15,6 +18,16 @@
     font-size: 1em;
     line-height: 2rem; }
   .card__footer {
+    font-weight: 300; }
+  .card__list .card__header {
+    font-weight: 300 !important; }
+  .card__list .card__title {
+    line-height: 1rem;
+    font-weight: 400;
+    margin: 1.25rem 0;
+    font-size: 1.75em; }
+  .card__list .card__text {
+    line-height: 1.25rem;
     font-weight: 300; }
 
 .card:hover {

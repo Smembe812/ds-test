@@ -4,6 +4,10 @@
     grid-template-columns: repeat(12, 1fr [col-start]);
     grid-auto-rows: auto;
 
+    &__gap{
+        grid-gap: 1em
+    }
+
     &__box {
         display: grid;
         grid-column-start: 1;

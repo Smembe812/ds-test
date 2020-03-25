@@ -8,6 +8,8 @@
     */
   /** where column should end*/
   /** where column should start*/ }
+  .grid__gap {
+    grid-gap: 1em; }
   .grid__box {
     display: grid;
     grid-column-start: 1;
