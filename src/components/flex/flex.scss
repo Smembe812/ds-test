@@ -1,0 +1,8 @@
+/**flex Container*/
+.flex{
+    display: flex;
+
+    &__justify-end{
+        justify-content: flex-end;
+    }
+}
