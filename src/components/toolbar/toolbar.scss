@@ -1,7 +1,13 @@
 .toolbar{
     border-bottom: solid thin;
+
+    &__box-shadow{
+        box-shadow: 0px 0px 2px 1px #dbdbdb;
+        border-bottom: unset;
+    }
     
     &__title{
+        display: inline-flex;
         padding: .5em 1em;
     }
 
@@ -10,11 +16,21 @@
     }
     &__list-item{
         padding: 0.5em 1em;
+        display: inline-flex;
         margin: 0 0.25em;
         color: #9E9E9E;
+        cursor: pointer;
+    }
+
+    &__list-item-text{
+        padding: 0.125em 0;
     }
 
     &__list-item--active{
+        color: #212121;
+    }
+
+    &__list-item:hover{
         color: #212121;
     }
 }
