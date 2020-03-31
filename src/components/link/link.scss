@@ -1,4 +1,10 @@
 .link{
     text-decoration: none;
-    color: yellow;
+    border-bottom: solid rgb(46, 104, 212);
+    color: rgb(46, 104, 212);
+}
+
+.link:hover{
+    background: rgb(46, 104, 212);
+    color: #fafafa;
 }

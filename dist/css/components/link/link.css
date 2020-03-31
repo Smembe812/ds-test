@@ -1,3 +1,8 @@
 .link {
   text-decoration: none;
-  color: yellow; }
+  border-bottom: solid #2e68d4;
+  color: #2e68d4; }
+
+.link:hover {
+  background: #2e68d4;
+  color: #fafafa; }

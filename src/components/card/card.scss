@@ -32,13 +32,19 @@
         font-weight: 300;
     }
     
+    &__body--grid{
+        max-height: 11em;
+        min-height: 11em;
+        overflow: hidden;
+    }
+
     &__list{
         .card__header {
             font-weight: 300 !important;
         }
 
         .card__title {
-            line-height: 1rem;
+            line-height: 1.75rem;
             font-weight: 400;
             margin: 1.25rem 0;
             font-size: 1.75em;
@@ -48,9 +54,30 @@
             line-height: 1.25rem;
             font-weight: 300;
         }
+
+    }
+
+    &__grid{
+        .card__header {
+            font-weight: 300 !important;
+        }
+
+        .card__title {
+            line-height: 1.75rem;
+            font-weight: 400;
+            margin: 1.25rem 0;
+            font-size: 1.75em;
+        }
+
+        .card__text {
+            line-height: 1.25rem;
+            font-weight: 300;
+        }
+
     }
 }    
 
 .card:hover{
     box-shadow: 0 0 19px 0px rgba(0,0,0,.2);
+    cursor: pointer;
 }
