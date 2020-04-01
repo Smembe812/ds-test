@@ -8,3 +8,12 @@
     background: #343a40; }
   .dl-btn__secondary {
     background: transparent; }
+  .dl-btn__round {
+    position: absolute;
+    bottom: 5em;
+    right: 5em;
+    border-radius: 50%;
+    padding: 1em; }
+
+.dl-btn:focus {
+  outline: none; }

@@ -12,4 +12,16 @@
     &__secondary{
         background: transparent;
     }
+
+    &__round{
+        position: absolute;
+        bottom: 5em;
+        right: 5em;
+        border-radius: 50%;
+        padding: 1em;
+    }
+}
+
+.dl-btn:focus{
+    outline: none;
 }
