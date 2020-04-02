@@ -16,6 +16,7 @@ body {
   .dl-btn__secondary {
     background: transparent; }
   .dl-btn__round {
+    display: flex;
     position: absolute;
     bottom: 5em;
     right: 5em;
@@ -24,56 +25,6 @@ body {
 
 .dl-btn:focus {
   outline: none; }
-
-.card {
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
-  padding: 2rem; }
-  .card__image {
-    width: 100%;
-    margin-bottom: 2rem; }
-  .card__header {
-    font-weight: 300; }
-  .card__header-text {
-    border-bottom: solid thin;
-    padding: 0.25em 0; }
-  .card__title {
-    margin: 1.5rem 0;
-    font-size: 2em;
-    line-height: 2.5rem; }
-  .card__text {
-    margin-bottom: 1.5rem;
-    font-size: 1em;
-    line-height: 2rem; }
-  .card__footer {
-    font-weight: 300; }
-  .card__body--grid {
-    max-height: 11em;
-    min-height: 11em;
-    overflow: hidden; }
-  .card__list .card__header {
-    font-weight: 300 !important; }
-  .card__list .card__title {
-    line-height: 1.75rem;
-    font-weight: 400;
-    margin: 1.25rem 0;
-    font-size: 1.75em; }
-  .card__list .card__text {
-    line-height: 1.25rem;
-    font-weight: 300; }
-  .card__grid .card__header {
-    font-weight: 300 !important; }
-  .card__grid .card__title {
-    line-height: 1.75rem;
-    font-weight: 400;
-    margin: 1.25rem 0;
-    font-size: 1.75em; }
-  .card__grid .card__text {
-    line-height: 1.25rem;
-    font-weight: 300; }
-
-.card:hover {
-  box-shadow: 0 0 19px 0px rgba(0, 0, 0, 0.2);
-  cursor: pointer; }
 
 /**flex Container*/
 .flex {
@@ -187,6 +138,72 @@ body {
     grid-column-end: span 12; }
   .grid__col {
     grid-column: span auto; }
+
+.card {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 3px 0px rgba(0, 0, 0, 0.22);
+  padding: 2rem; }
+  .card__image {
+    width: 100%;
+    margin-bottom: 2rem; }
+  .card__header {
+    font-weight: 300; }
+  .card__header-bar-title {
+    display: inline-flex; }
+  .card__header-bar-text {
+    padding: .125em 0; }
+  .card__header-bar-list-item-text {
+    padding: .125em 0; }
+  .card__header-bar-list-item {
+    padding: 0em 0.25em;
+    display: inline-flex;
+    margin: 0 .25em;
+    color: #9e9e9e;
+    cursor: pointer; }
+  .card__header-bar-list-item:hover {
+    color: #212121; }
+  .card__header-bar-list-item--active {
+    color: #212121; }
+  .card__header-text {
+    border-bottom: solid thin;
+    padding: 0.25em 0; }
+  .card__title {
+    margin: 1.5rem 0;
+    font-size: 2em;
+    line-height: 2.5rem; }
+  .card__text {
+    margin-bottom: 1.5rem;
+    font-size: 1em;
+    line-height: 2rem; }
+  .card__footer {
+    font-weight: 300; }
+  .card__body--grid {
+    max-height: 11em;
+    min-height: 11em;
+    overflow: hidden; }
+  .card__list .card__header {
+    font-weight: 300 !important; }
+  .card__list .card__title {
+    line-height: 1.75rem;
+    font-weight: 400;
+    margin: 1.25rem 0;
+    font-size: 1.75em; }
+  .card__list .card__text {
+    line-height: 1.25rem;
+    font-weight: 300; }
+  .card__grid .card__header {
+    font-weight: 300 !important; }
+  .card__grid .card__title {
+    line-height: 1.75rem;
+    font-weight: 400;
+    margin: 1.25rem 0;
+    font-size: 1.75em; }
+  .card__grid .card__text {
+    line-height: 1.25rem;
+    font-weight: 300; }
+
+.card:hover {
+  box-shadow: 0 0 19px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
 
 .header {
   padding: .5rem 1rem; }

@@ -11,6 +11,37 @@
     &__header{
         font-weight: 300;
     }
+
+    &__header-bar{
+        &-title{
+            display: inline-flex;
+        }
+
+        &-text{
+            padding: .125em 0;
+        }
+
+        &-list-item-text{
+            padding: .125em 0;
+        }
+        &-list-item{
+            padding: 0em 0.25em;
+            display: inline-flex;
+            margin: 0 .25em;
+            color: #9e9e9e;
+            cursor: pointer;
+        }
+
+        &-list-item:hover{
+            color: #212121;
+        }
+
+        &-list-item--active{
+            color: #212121;
+        }
+
+
+    }
     
     &__header-text{
         border-bottom: solid thin;

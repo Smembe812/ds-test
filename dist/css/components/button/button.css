@@ -9,6 +9,7 @@
   .dl-btn__secondary {
     background: transparent; }
   .dl-btn__round {
+    display: flex;
     position: absolute;
     bottom: 5em;
     right: 5em;

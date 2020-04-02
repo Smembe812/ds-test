@@ -6,6 +6,22 @@
     margin-bottom: 2rem; }
   .card__header {
     font-weight: 300; }
+  .card__header-bar-title {
+    display: inline-flex; }
+  .card__header-bar-text {
+    padding: .125em 0; }
+  .card__header-bar-list-item-text {
+    padding: .125em 0; }
+  .card__header-bar-list-item {
+    padding: 0em 0.25em;
+    display: inline-flex;
+    margin: 0 .25em;
+    color: #9e9e9e;
+    cursor: pointer; }
+  .card__header-bar-list-item:hover {
+    color: #212121; }
+  .card__header-bar-list-item--active {
+    color: #212121; }
   .card__header-text {
     border-bottom: solid thin;
     padding: 0.25em 0; }
