@@ -7417,6 +7417,11 @@ mute-stream@0.0.8:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
+mxgraph@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/mxgraph/-/mxgraph-4.1.1.tgz#a418a097fafde33a2882fbb316fdeef5b2683a0e"
+  integrity sha512-Bo6v+Dvu+IYgF33gOwSyK0tRJQfwJdXgdi5jVBpgnzLW/I9sPihgFEreA+vf/KQp0qy0on9nTmRvJbRBG5g5Ow==
+
 nan@^2.12.1, nan@^2.13.2:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.14.0.tgz#7818f722027b2459a86f0295d434d1fc2336c52c"
