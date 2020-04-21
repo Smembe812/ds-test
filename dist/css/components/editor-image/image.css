@@ -1,0 +1,9 @@
+.image {
+  width: 100%; }
+  .image__container {
+    display: grid;
+    justify-content: center; }
+  .image__caption {
+    color: #343a40c9;
+    text-align: center;
+    font-weight: 300; }
